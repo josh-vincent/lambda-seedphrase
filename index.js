@@ -1,7 +1,7 @@
 const bip39 = require("bip39");
 
 exports.handler = async (event) => {
-  return generateMnemonic.promise();
+  return generateMnemonic();
 };
 
 function generateMnemonic() {
