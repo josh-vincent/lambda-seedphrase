@@ -16,7 +16,7 @@ npm install bip39
 
 ### Generate Seed phrase
 
-``javascript
+```javascript
 function generateMnemonic() {
   let mnemonic;
   let attempt = 0;
