@@ -13,3 +13,18 @@ bip39 package requried
 ```
 npm install bip39
 ```
+
+### Generate Seed phrase
+
+``javascript
+function generateMnemonic() {
+  let mnemonic;
+  let attempt = 0;
+  do {
+    attempt = attempt + 1;
+    mnemonic = bip39.generateMnemonic();
+    console.log(`${attempt} attempt trying menomic`, mnemonic);
+  } while (bip39.validateMnemonic(mnemonic) === false);
+  return mnemonic;
+}
+```
